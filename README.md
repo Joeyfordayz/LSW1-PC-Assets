@@ -1,2 +1,2 @@
 # LSW1-PC-Assets
-Minor Reverse Enginnering and decompiling of the PC EXE file to create fixes and make the PC version of the game far better and or more playable and stable
+Where i will hold Assets for LEGO Star Wars: The Video Game on PC. Assets like the autosplitter for livesplit, and dll's/mods for the game
