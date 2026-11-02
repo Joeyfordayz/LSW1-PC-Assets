@@ -20,7 +20,7 @@ startup
     settings.Add("dooku", false, "End on Count Dooku Outro (NoCut Any%)");
     settings.Add("rushend", false, "End on Gunship Outro (Minikit Rush/True Jedi Rush)");
     settings.Add("room", false, "Split on every room in Any%");
-    settings.Add("resetonmenu", true, "Reset Timer if Manually Exited to Main Menu");
+    settings.Add("resetonmenu", true, "Automatically Reset Timer upon Exiting to Title Screen");
     refreshRate = 60;
 }
 
@@ -247,7 +247,7 @@ split
 
 start
 {
-    if (settings["newgame"] && current.start > old.start && current.title == 1 && current.currscene == 124) return true;
+    if (settings["newgame"] && current.start > old.start && current.title == 1 && current.currscene == 124) return true; // credit goes to coolestto
     if (settings["freeplay"] && current.door == "") return true;
     if (settings["rushstart"] && vars.rushStartLeeway == 1) return true;
 }
